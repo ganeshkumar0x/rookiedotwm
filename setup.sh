@@ -17,7 +17,7 @@ done
 echo "Suckless build completed."
 echo ""
 
-# Step 2: Symlink dotfiles
+# Step 2: Symlink dotfiles using absolute paths
 DOTFILES_DIR="./dotfiles"
 FILES=".bashrc .img.jpg .tmux.conf .vimrc .xinitrc"
 
@@ -27,7 +27,8 @@ for file in $FILES; do
     DEST="$HOME/$file"
 
     if [ -e "$SRC" ]; then
-        ln -sf "$SRC" "$DEST"
+        ABS_SRC="$(realpath "$SRC")"
+        ln -sf "$ABS_SRC" "$DEST"
         echo "Linked $file -> $DEST"
     else
         echo "Warning: Dotfile '$SRC' not found, skipping..."
