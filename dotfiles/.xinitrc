@@ -10,4 +10,5 @@ hsetroot -fill /home/rookie/.img.jpg
 dunst &
 slstatus &
 xcompmgr &
+export GTK_THEME=Adwaita:dark
 exec dwm

@@ -42,7 +42,6 @@ endif
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
@@ -63,15 +62,15 @@ hi StatusLine    ctermbg=NONE guibg=NONE
 hi StatusLineNC  ctermbg=NONE guibg=NONE
 hi TabLine       ctermbg=NONE guibg=NONE
 hi TabLineFill   ctermbg=NONE guibg=NONE
-hi TabLineSel    ctermbg=NONE guibg=NONE
+" hi TabLineSel    ctermbg=NONE guibg=NONE
 hi Folded        ctermbg=NONE guibg=NONE
-hi Pmenu         ctermbg=NONE guibg=NONE
-hi PmenuSel      ctermbg=NONE guibg=NONE
-hi PmenuSbar     ctermbg=NONE guibg=NONE
-hi PmenuThumb    ctermbg=NONE guibg=NONE
+" hi Pmenu         ctermbg=NONE guibg=NONE
+" hi PmenuSel      ctermbg=NONE guibg=NONE
+" hi PmenuSbar     ctermbg=NONE guibg=NONE
+" hi PmenuThumb    ctermbg=NONE guibg=NONE
 hi NormalFloat   ctermbg=NONE guibg=NONE
 hi FloatBorder   ctermbg=NONE guibg=NONE
-hi Visual        ctermbg=NONE guibg=NONE
+" hi Visual        ctermbg=NONE guibg=NONE
 hi CursorLine    ctermbg=NONE guibg=NONE
 hi IncSearch     ctermbg=NONE guibg=NONE
 hi Search        ctermbg=NONE guibg=NONE
@@ -87,8 +86,3 @@ let g:ctrlp_custom_ignore = {
       \ }
 let g:ctrlp_full_path = 1
 nnoremap <F7> :CtrlP<CR>
-
-" Coc.nvim Key Mappings
-inoremap <silent><expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>"
-inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
-inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
