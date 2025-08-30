@@ -41,7 +41,6 @@ endif
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
@@ -49,7 +48,7 @@ call plug#end()
 " Themes
 set termguicolors
 set background=dark
-colorscheme gruvbox
+colorscheme slate
 
 " Transparency
 hi Normal        ctermbg=NONE guibg=NONE
