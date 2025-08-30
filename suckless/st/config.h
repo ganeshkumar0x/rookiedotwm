@@ -1,4 +1,4 @@
-static char *font = "DejaVu Sans Mono:pixelsize=19:antialias=true:autohint=true";
+static char *font = "Agave:pixelsize=23:antialias=true:autohint=true";
 static int borderpx = 2;
 
 static char *shell = "/bin/sh";

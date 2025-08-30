@@ -1,7 +1,7 @@
 static int topbar = 1;
 
 static const char *fonts[] = {
-    "DejaVu Sans Mono:size=13"
+    "Agave:size=16"
 };
 
 static const char *prompt = NULL;

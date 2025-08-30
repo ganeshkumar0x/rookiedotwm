@@ -3,8 +3,8 @@ static const unsigned int snap      = 32;
 static const int swallowfloating    = 0;
 static const int showbar            = 1;
 static const int topbar             = 1;
-static const char *fonts[]          = { "DejaVu Sans Mono:size=13" };
-static const char dmenufont[]       = "DejaVu Sans Mono:size=13";
+static const char *fonts[]          = { "Agave:size=16" };
+static const char dmenufont[]       = "Agave:size=16";
 
 static const char *colors[][3] = {
     [SchemeNorm] = { "gray90", "black", "black" },
