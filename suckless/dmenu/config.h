@@ -1,7 +1,7 @@
 static int topbar = 1;
 
 static const char *fonts[] = {
-    "Agave:size=16"
+    "Hack:size=14"
 };
 
 static const char *prompt = NULL;

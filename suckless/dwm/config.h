@@ -3,8 +3,8 @@ static const unsigned int snap      = 32;
 static const int swallowfloating    = 0;
 static const int showbar            = 1;
 static const int topbar             = 1;
-static const char *fonts[]          = { "Agave:size=16" };
-static const char dmenufont[]       = "Agave:size=16";
+static const char *fonts[]          = { "Hack:size=14" };
+static const char dmenufont[]       = "Hack:size=14";
 
 static const char *colors[][3] = {
     [SchemeNorm] = { "gray90", "black", "black" },
@@ -43,7 +43,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0";
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *firefoxcmd[] = { "brave-browser", NULL };
+static const char *firefoxcmd[] = { "firefox", NULL };
 static const char *slockcmd[] = { "slock", NULL };
 static const char *prtscrcmd[] = { "/bin/sh", "-c", "mkdir -p /home/rookie/Downloads/screenshots && scrot -s /home/rookie/Downloads/screenshots/%d-%m-%Y_%H-%M-%S.png", NULL };
 static const char *volup[]   = { "amixer", "set", "Master", "5%+", NULL };
