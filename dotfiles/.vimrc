@@ -4,6 +4,10 @@ filetype plugin indent on
 set ts=2 sts=2 sw=2 et ai si
 set rnu noshowmode ignorecase smartcase
 
+" Enable Spell Checking
+set spell
+set spelllang=en_us
+
 " Disable search highlight but keep incremental search
 set nohlsearch
 set incsearch
